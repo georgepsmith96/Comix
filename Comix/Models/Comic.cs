@@ -5,6 +5,7 @@ namespace Comix.Models
     public class Comic
     {
         public int Id { get; set; }
+        public int IssueNumber { get; set; }
         public string Title { get; set; }
         public Artist[] Writers { get; set; }
         public Artist[] Artists { get; set; }

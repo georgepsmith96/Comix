@@ -2,9 +2,9 @@
 
 namespace Comix.Controllers
 {
-    public class DetailController : Controller
+    public class ComicController : Controller
     {
-        // GET: Detail
+        // GET: Comic
         public ActionResult Index()
         {
             return View();
