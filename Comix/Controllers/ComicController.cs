@@ -23,13 +23,19 @@ namespace Comix.Controllers
                 Name = "Jagoda Morys",
                 Role = "Illustrator"
             };
+            Series theAmazingSpiderMan = new Series()
+            {
+                Title = "The Amazing Spider-Man"
+            };
 
             Comic comic = new Comic()
             {
                 Title = "The Amazing Spider-Man",
                 IssueNumber = 700,
                 DescriptionHtml = "<p>Final Issue! Witness the final hours of Doctor Octopus' life and his one last great act of revenge! If Spider-Man survives... <strong>will Peter Parker?</strong></p>",
-                Artists = new Artist[]{george, jago}
+                Artists = new Artist[]{george, jago},
+                Series = theAmazingSpiderMan,
+                IsFavourite = true
         };
 
             ViewBag.ComicName = "The Amazing Spider-Man";

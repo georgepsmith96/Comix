@@ -15,6 +15,7 @@ namespace Comix.Models
         public Series Series { get; set; }
         public Genre Genre { get; set; }
         public DateTime DatePublished { get; set; }
+        public bool IsFavourite { get; set; }
 
         public string DisplayText => Title + " - " + IssueNumber;
 
