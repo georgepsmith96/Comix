@@ -16,6 +16,8 @@ namespace Comix.Models
         public Genre Genre { get; set; }
         public DateTime DatePublished { get; set; }
 
+        public string DisplayText => Title + " - " + IssueNumber;
+
         public string CoverImageFileName => Series.Title.Replace(" ", "-").ToLower() + "-" + IssueNumber + ".jpg";
     }
 }
